@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cache_imitation"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        mc:Ignorable="d" Height="459.075" Width="598.116" Title="Data search">
     <Grid>
-        
+        <TextBox x:Name="text_memSize" HorizontalAlignment="Left" Height="43" Margin="265,34,0,0" TextWrapping="Wrap" Text="4096" VerticalAlignment="Top" Width="148" FontSize="24" VerticalContentAlignment="Center"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="43" Margin="51,34,0,0" TextWrapping="Wrap" Text="Розмір пам'яті" VerticalAlignment="Top" Width="174" FontSize="24" Padding="0,6,0,0"/>
+        <TextBlock x:Name="text_CacheSize" HorizontalAlignment="Left" Height="43" Margin="265,91,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="148" FontSize="24" Padding="0,4,0,0"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Height="43" Margin="51,91,0,0" TextWrapping="Wrap" Text="Розмір кеш" VerticalAlignment="Top" Width="148" FontSize="24" Padding="0,6,0,0"/>
+        <TextBox x:Name="text_chooseCell" HorizontalAlignment="Left" Height="43" Margin="265,172,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="148" FontSize="24" Padding="0" VerticalContentAlignment="Center"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Height="43" Margin="51,172,0,0" TextWrapping="Wrap" Text="Обрати комірку" VerticalAlignment="Top" Width="191" FontSize="24" Padding="0,6,0,0"/>
+        <Button x:Name="button_findCell" Content="Знайти" HorizontalAlignment="Left" Height="43" Margin="440,172,0,0" VerticalAlignment="Top" Width="122" FontSize="18" Click="button_findCell_Click"/>
+        <TextBox x:Name="text_cellValue" HorizontalAlignment="Left" Height="43" Margin="265,230,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="148" FontSize="24" Padding="0" VerticalContentAlignment="Center"/>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Height="43" Margin="51,230,0,0" TextWrapping="Wrap" Text="Значення" VerticalAlignment="Top" Width="191" FontSize="24" Padding="0,6,0,0"/>
+        <Button x:Name="button_CellValueWrite" Content="Записати" HorizontalAlignment="Left" Height="43" Margin="440,230,0,0" VerticalAlignment="Top" Width="122" FontSize="18" Click="button_CellValueWrite_Click"/>
+        <ListBox x:Name="listView_Log" HorizontalAlignment="Left" Margin="51,293,0,34" FontSize="15" MinWidth="490"/>
+        <Button x:Name="button_memSizeChange" Content="Створити" HorizontalAlignment="Left" Height="43" Margin="440,34,0,0" VerticalAlignment="Top" Width="122" FontSize="18" Click="button_memSizeChange_Click"/>
+
     </Grid>
 </Window>
